@@ -7,8 +7,8 @@ USER root
 RUN apt-get update && apt-get install -y firefox net-tools \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
-RUN python3 -m pip install wxpython
-RUN python3 -m pip install opencv-python
+RUN pip3 install wxpython
+RUN pip3 install opencv-python
 
 USER gitpod
 # Apply user-specific settings
