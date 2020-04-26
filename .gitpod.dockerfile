@@ -8,7 +8,7 @@ USER root
 #    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 RUN pip3 install https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/wxPython-4.0.7-cp37-cp37m-linux_x86_64.whl
-RUN pip3 install opencv-python
+RUN pip3 install opencv-python Flask flask-cors GitPython
 RUN chown -R gitpod:gitpod /home/gitpod/.cache/pip
 
 USER gitpod
