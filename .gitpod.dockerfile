@@ -6,7 +6,7 @@ USER root
 # Install custom tools, runtime, etc.
 #RUN apt-get update && apt-get install -y firefox net-tools \
 #    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-RUN apt-get install libnotify
+RUN apt-get update && apt-get install libnotify
 
 RUN pip3 install https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04/wxPython-4.1.0-cp38-cp38-linux_x86_64.whl
 #RUN pip3 install wxPython==4.1.0
