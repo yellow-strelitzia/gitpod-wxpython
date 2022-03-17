@@ -10,7 +10,7 @@ USER root
 RUN pip3 install https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04/wxPython-4.1.0-cp38-cp38-linux_x86_64.whl
 #RUN pip3 install wxPython==4.1.0
 RUN pip3 install opencv-python Flask flask-cors GitPython
-RUN chown -R gitpod:gitpod /home/gitpod/.cache/pip
+#RUN chown -R gitpod:gitpod /home/gitpod/.cache/pip
 
 USER gitpod
 # Apply user-specific settings
